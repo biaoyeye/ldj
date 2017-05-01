@@ -1,0 +1,578 @@
+@charset "utf-8";
+@media (min-width: 320px) {
+  html {
+    font-size: 41.66666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 46.875px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 48.828125px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 52.08333333px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 53.90625px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 55.20833333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 70.3125px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 83.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 97.65625px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 100px;
+  }
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~common style~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "Microsoft Yahei", sans-serif;
+  background-color: #666666;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~main style~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.layout {
+  width: 100%;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0.1rem 0;
+  background-color: #fff;
+  position: relative;
+}
+/*search area style*/
+.search {
+  width: 100%;
+  height: 1rem;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 0.1rem;
+  z-index: 999;
+}
+.search input {
+  width: 100%;
+  height: 0.5rem;
+  border: 1px solid #0657a9;
+  border-radius: 0.08rem;
+  margin-top: 0.25rem;
+  font-size: 0.25rem;
+  padding-left: 0.15rem;
+  outline: none;
+}
+.search b {
+  width: 0.45rem;
+  height: 0.45rem;
+  background: url(../img/arrow/fleche_right.png) 0px 0px no-repeat;
+  background-size: 0.9rem 0.9rem;
+  position: absolute;
+  right: 0.1rem;
+  top: 0.27rem;
+  cursor: pointer;
+}
+.search b:hover {
+  background-position: -0.45rem 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~font-style~~~~~~~~~~~~~~~~*/
+@font-face {
+  font-family: byy;
+  src: url(../lib/fontsIco/icomoon.eot-) format("embedded-opentype");
+  src: url(../lib/fontsIco/icomoon.eot--2mgmdr&v=135) format("embedded-opentype");
+  src: url(../lib/fontsIco/icomoon.ttf--2mgmdr&v=135) format("truetype");
+  src: url(../lib/fontsIco/icomoon.woff--2mgmdr&v=135) format("woff");
+}
+.use_byy {
+  font-family: "byy";
+}
+.icon_product::before {
+  content: "\e6f2";
+}
+.icon_support::before {
+  content: "\e6fa";
+}
+.icon_introduce::before {
+  content: "\e6f6";
+}
+.icon_news::before {
+  content: "\e6e8";
+}
+/*banner area style*/
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 3.6rem;
+  margin-top: 0.9rem;
+}
+.banner .images {
+  height: 3.6rem;
+  width: 46.08rem;
+  position: absolute;
+  left: -7.68rem;
+  top: 0;
+}
+.banner .images li {
+  width: 7.68rem;
+  height: 3.6rem;
+  float: left;
+}
+.banner .images li a:first-child {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/banner-1.jpg) center no-repeat;
+  background-size: contain;
+}
+.banner .points {
+  position: absolute;
+  bottom: 0.1rem;
+  left: 2.85rem;
+}
+.banner .points li {
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 0.2rem;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  float: left;
+  margin-left: 0.1rem;
+  font-size: 0.14rem;
+  color: #0657a9;
+}
+.banner .points .now {
+  color: #fff;
+  background-color: #0657a9;
+}
+/*navs area style*/
+.navs {
+  margin-top: 0.2rem;
+}
+.navs ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.navs ul li a {
+  color: #0657a9;
+}
+.navs ul li a p:first-child {
+  font-size: 0.96rem;
+  color: #0657a9;
+  border-bottom: 0;
+  margin-bottom: 0.15rem;
+}
+.navs ul li a p:last-child {
+  font-size: 0.3rem;
+  color: #666;
+}
+/*majorEx area style*/
+.majorEx {
+  margin-top: 0.3rem;
+  text-align: center;
+  padding: 0 0.15rem;
+}
+.majorEx p {
+  text-align: center;
+}
+.majorEx p:first-child {
+  font-size: 0.44rem;
+  color: #0657a9;
+}
+.majorEx p:nth-child(2) {
+  font-size: 0.28rem;
+  color: #b6b6b6;
+}
+.majorEx p:last-child {
+  font-size: 0.32rem;
+  color: #999;
+}
+/*ads area style*/
+.icon_one::before {
+  content: "\e606";
+}
+.icon_two::before {
+  content: "\e688";
+}
+.icon_three::before {
+  content: "\e694";
+}
+.icon_four::before {
+  content: "\e61b";
+}
+.ads {
+  margin-top: 0.3rem;
+  text-align: center;
+}
+.ads ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.ads ul li p:first-child {
+  background-color: #0657a9;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: #fff;
+  margin: 0 auto;
+}
+.ads ul li p:last-child {
+  font-size: 0.3rem;
+  color: #000000;
+  margin-top: 0.2rem;
+}
+.ads ul li:nth-child(2) p:first-child {
+  background-color: orangered;
+}
+.ads ul li:nth-child(3) p:first-child {
+  background-color: orange;
+}
+.ads ul li:nth-child(4) p:first-child {
+  background-color: deepskyblue;
+}
+/*bigAd area style*/
+.bigAd {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.bigAd p:first-child {
+  font-size: 0.45rem;
+  color: #0657a9;
+}
+.bigAd p:nth-child(2) {
+  font-size: 0.28rem;
+  color: #666666;
+}
+.bigAd img {
+  width: 6.4rem;
+  height: 3.52rem;
+}
+/*strong area style*/
+.strong {
+  margin-top: 0.5rem;
+  padding: 0 0.2rem;
+}
+.strong ul li {
+  padding-left: 1.8rem;
+  position: relative;
+  margin-top: 0.6rem;
+}
+.strong ul li img {
+  width: 1.45rem;
+  position: absolute;
+  top: 0;
+  left: 0.1rem;
+}
+.strong ul li p:first-child {
+  font-size: 0.36rem;
+  color: #000;
+  line-height: 0.6rem;
+}
+.strong ul li p:nth-child(2) {
+  font-size: 0.31rem;
+  color: #666666;
+  line-height: 0.6rem;
+}
+/*pics area style*/
+.pics {
+  margin-top: 0.5rem;
+}
+.pics ul li {
+  margin-top: 0.3rem;
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+.pics ul li img {
+  width: 2.7rem;
+}
+/*details area style*/
+.details {
+  margin-top: 0.5rem;
+  background-color: #0657a9;
+}
+.details ul li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  position: relative;
+  margin: 0.5rem 0;
+}
+.details ul li p:first-child {
+  font-size: 0.3rem;
+  margin-left: 0.8rem;
+  color: #fff;
+}
+.details ul li p:nth-child(2) {
+  font-size: 0.3rem;
+  margin-left: 0.8rem;
+  color: #fff;
+}
+.details ul li img {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  width: 0.82rem;
+  height: 0.82rem;
+}
+/*toTop area style*/
+.toTop {
+  margin-top: 0.5rem;
+  height: 0.7rem;
+  background-color: #0657a9;
+  position: relative;
+}
+.toTop a {
+  position: absolute;
+  right: 0;
+  width: 1.5rem;
+  height: 100%;
+}
+.toTop a strong {
+  font-size: 0.34rem;
+  line-height: 0.7rem;
+  margin-left: 0.3rem;
+  color: #fff;
+}
+.toTop a b {
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  width: 0.18rem;
+  height: 0.18rem;
+  overflow: hidden;
+}
+.toTop a b span {
+  position: absolute;
+  width: 0.18rem;
+  height: 0.18rem;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 0px;
+  top: 0.11rem;
+}
+/*bottom area style*/
+.icon_fk::before {
+  content: "\e904";
+}
+.bottom {
+  margin-top: 0.4rem;
+  color: #666666;
+  text-align: center;
+  font-size: 0.28rem;
+  padding-bottom: 0.5rem;
+}
+.bottom p span {
+  margin-left: 0.15rem;
+}
+.bottom p a {
+  margin-left: 0.15rem;
+  color: #666;
+}
+/*close area style*/
+.close {
+  height: 0.9rem;
+  background-color: #0657a9;
+  opacity: 0.8;
+  position: relative;
+  padding-left: 0.25rem;
+  margin-bottom: 1.4rem;
+}
+.close a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0.3rem;
+  line-height: 0.9rem;
+  color: #fff;
+}
+.close span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1.2rem;
+  height: 100%;
+}
+.close span b {
+  position: absolute;
+  left: 0.38rem;
+  top: 0.23rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: #fff;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #0657a9;
+  cursor: alias;
+}
+/*footer area style*/
+.icon_phone::before {
+  content: "\e62c";
+}
+.icon_map::before {
+  content: "\e67c";
+}
+.icon_message::before {
+  content: "\e6b2";
+}
+.icon_tencent::before {
+  content: "\e6ca";
+}
+footer {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #0657a9;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+footer ul li {
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+footer ul li a {
+  display: block;
+  font-size: 0.3rem;
+  color: #fff;
+}
+footer ul li a p:first-child {
+  font-size: 0.6rem;
+}
+/*menu area style*/
+.icon_main::before {
+  content: "\e686";
+}
+.icon_area::before {
+  content: "\e6df";
+}
+.icon_service::before {
+  content: "\e6df";
+}
+.icon_intro::before {
+  content: "\e6df";
+}
+.icon_active::before {
+  content: "\e6df";
+}
+.icon_btn::before {
+  content: "\e6b0";
+}
+.menu {
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  border-top: 0.03rem solid #0657a9;
+  border-bottom: 0.03rem solid #0657a9;
+}
+.menu ul {
+  margin-top: 1.08rem;
+}
+.menu ul li {
+  padding: 0.2rem 0.5rem;
+  display: none;
+}
+.menu ul li a {
+  color: #666666;
+}
+.menu ul li a span:first-child {
+  margin-right: 0.15rem;
+  font-size: 0.6rem;
+}
+.menu ul li a span:last-child {
+  font-size: 0.34rem;
+}
+.menu ul .current {
+  background-color: lightblue;
+  border-left: 0.1rem solid #0657a9;
+}
+.menuClick {
+  position: fixed;
+  left: 0.2rem;
+  bottom: 1.8rem;
+  font-size: 1rem;
+  background-color: #0657a9;
+  z-index: 10000;
+  border-radius: 0.15rem;
+  color: #fff;
+}

@@ -1,0 +1,9 @@
+@charset "utf-8";
+.adapterFunc(@index) when (@index<=length(@deviceWidthList)){
+  @media(min-width: extract(@deviceWidthList,@index)){
+    html{
+      font-size:extract(@deviceWidthList,@index)/@baseDeviceSize*@baseSize;
+    }
+  }
+  .adapterFunc(@index+1);
+}
